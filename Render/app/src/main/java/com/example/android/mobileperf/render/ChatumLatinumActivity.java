@@ -29,6 +29,8 @@ public class ChatumLatinumActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatum_latinum);
 
+        // Nullified background
+        getWindow().setBackgroundDrawable(null);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.activity_chatum_latinum_container, new ChatsFragment())
